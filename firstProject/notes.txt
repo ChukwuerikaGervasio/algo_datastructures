@@ -1,0 +1,25 @@
+Setup]
+OneTimeSetUp
+prefix ?? """
+foreach(var c in prefix ?? "")
+"mrs"
+"m"
+"prefix"
+char
+char?
+char? val = 'a'
+val.HasValue
+val.Value
+char?
+throw new Exception()
+if(currentNode.children.TryGetValue)
+Node someNode;
+if(current.children.TryGetValue(c, out someNode))
+	
+me	3:44 PM
+andela-cdike
+hanndle end of a prefix
+try recursive approach
+
+ensure and null false. empty string should return true if empty string could be in the structure. 
+

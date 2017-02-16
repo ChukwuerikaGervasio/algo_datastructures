@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<test-run id="0" testcasecount="5" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="5" result="Passed" portable-engine-version="3.3.0.0" start-time="2017-02-16 11:21:02Z" end-time="2017-02-16 11:21:02Z" duration="0.237179">
+  <test-run id="0" testcasecount="5" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="5" result="Passed" portable-engine-version="3.3.0.0" start-time="2017-02-16 11:21:02Z" end-time="2017-02-16 11:21:02Z" duration="0.119150">
+    <test-suite type="Assembly" id="1006" name="trie.dll" fullname="/Users/nitrix/Projects/mentorship/trie/bin/Debug/netcoreapp1.1/trie.dll" runstate="Runnable" testcasecount="5" result="Passed" start-time="2017-02-16 11:21:02Z" end-time="2017-02-16 11:21:02Z" duration="0.082329" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+      <environment framework-version="3.6.0.0" clr-version=".NET Core 4.6.24628.01" os-version="Darwin 16.4.0 Darwin Kernel Version 16.4.0: Thu Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64" cwd="/Users/nitrix/Projects/mentorship/trie" machine-name="MacBook-Pro" culture="en-US" uiculture="en-US" os-architecture="X64" />
+      <settings>
+        <setting name="WorkDirectory" value="/Users/nitrix/Projects/mentorship/trie" />
+      </settings>
+      <test-suite type="TestSuite" id="1007" name="ConsoleApplication" fullname="ConsoleApplication" runstate="Runnable" testcasecount="5" result="Passed" start-time="2017-02-16 11:21:02Z" end-time="2017-02-16 11:21:02Z" duration="0.072451" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+        <test-suite type="TestFixture" id="1000" name="ConsoleApplicationTests" fullname="ConsoleApplication.ConsoleApplicationTests" classname="ConsoleApplication.ConsoleApplicationTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2017-02-16 11:21:02Z" end-time="2017-02-16 11:21:02Z" duration="0.067839" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+          <test-case id="1003" name="TestSearchEmptyString" fullname="ConsoleApplication.ConsoleApplicationTests.TestSearchEmptyString" methodname="TestSearchEmptyString" classname="ConsoleApplication.ConsoleApplicationTests" runstate="Runnable" seed="235277450" result="Passed" start-time="2017-02-16 11:21:02Z" end-time="2017-02-16 11:21:02Z" duration="0.009350" asserts="1" />
+          <test-case id="1001" name="TestSearchExists" fullname="ConsoleApplication.ConsoleApplicationTests.TestSearchExists" methodname="TestSearchExists" classname="ConsoleApplication.ConsoleApplicationTests" runstate="Runnable" seed="1563031788" result="Passed" start-time="2017-02-16 11:21:02Z" end-time="2017-02-16 11:21:02Z" duration="0.000235" asserts="1" />
+          <test-case id="1005" name="TestSearchIncompletePrefix" fullname="ConsoleApplication.ConsoleApplicationTests.TestSearchIncompletePrefix" methodname="TestSearchIncompletePrefix" classname="ConsoleApplication.ConsoleApplicationTests" runstate="Runnable" seed="1257787115" result="Passed" start-time="2017-02-16 11:21:02Z" end-time="2017-02-16 11:21:02Z" duration="0.001144" asserts="1" />
+          <test-case id="1002" name="TestSearchNull" fullname="ConsoleApplication.ConsoleApplicationTests.TestSearchNull" methodname="TestSearchNull" classname="ConsoleApplication.ConsoleApplicationTests" runstate="Runnable" seed="1535224940" result="Passed" start-time="2017-02-16 11:21:02Z" end-time="2017-02-16 11:21:02Z" duration="0.000248" asserts="1" />
+          <test-case id="1004" name="TestSearchUpperCase" fullname="ConsoleApplication.ConsoleApplicationTests.TestSearchUpperCase" methodname="TestSearchUpperCase" classname="ConsoleApplication.ConsoleApplicationTests" runstate="Runnable" seed="41899867" result="Passed" start-time="2017-02-16 11:21:02Z" end-time="2017-02-16 11:21:02Z" duration="0.000209" asserts="1" />
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-run>
+</test-run>
