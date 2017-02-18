@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<test-run id="0" testcasecount="5" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="5" result="Passed" portable-engine-version="3.3.0.0" start-time="2017-02-18 17:09:07Z" end-time="2017-02-18 17:09:07Z" duration="0.228607">
+  <test-run id="0" testcasecount="5" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="5" result="Passed" portable-engine-version="3.3.0.0" start-time="2017-02-18 17:09:07Z" end-time="2017-02-18 17:09:07Z" duration="0.118938">
+    <test-suite type="Assembly" id="1007" name="recursion.dll" fullname="/Users/nitrix/Projects/mentorship/recursion/bin/Debug/netcoreapp1.1/recursion.dll" runstate="Runnable" testcasecount="5" result="Passed" start-time="2017-02-18 17:09:07Z" end-time="2017-02-18 17:09:07Z" duration="0.088349" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+      <environment framework-version="3.6.0.0" clr-version=".NET Core 4.6.24628.01" os-version="Darwin 16.4.0 Darwin Kernel Version 16.4.0: Thu Dec 22 22:53:21 PST 2016; root:xnu-3789.41.3~3/RELEASE_X86_64" cwd="/Users/nitrix/Projects/mentorship/recursion" machine-name="MacBook-Pro" culture="en-US" uiculture="en-US" os-architecture="X64" />
+      <settings>
+        <setting name="WorkDirectory" value="/Users/nitrix/Projects/mentorship/recursion" />
+      </settings>
+      <test-suite type="TestSuite" id="1008" name="Recursion" fullname="Recursion" runstate="Runnable" testcasecount="5" result="Passed" start-time="2017-02-18 17:09:07Z" end-time="2017-02-18 17:09:07Z" duration="0.078384" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+        <test-suite type="TestFixture" id="1000" name="PowerSetTests" fullname="Recursion.PowerSetTests" classname="Recursion.PowerSetTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2017-02-18 17:09:07Z" end-time="2017-02-18 17:09:07Z" duration="0.069959" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+          <test-case id="1001" name="powerSetSetWithOneElement" fullname="Recursion.PowerSetTests.powerSetSetWithOneElement" methodname="powerSetSetWithOneElement" classname="Recursion.PowerSetTests" runstate="Runnable" seed="1944664961" result="Passed" start-time="2017-02-18 17:09:07Z" end-time="2017-02-18 17:09:07Z" duration="0.018483" asserts="1" />
+        </test-suite>
+        <test-suite type="TestFixture" id="1002" name="TripleStepsTest" fullname="Recursion.TripleStepsTest" classname="Recursion.TripleStepsTest" runstate="Runnable" testcasecount="4" result="Passed" start-time="2017-02-18 17:09:07Z" end-time="2017-02-18 17:09:07Z" duration="0.004033" total="4" passed="4" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="4">
+          <test-case id="1006" name="TripleStepsWithFour" fullname="Recursion.TripleStepsTest.TripleStepsWithFour" methodname="TripleStepsWithFour" classname="Recursion.TripleStepsTest" runstate="Runnable" seed="511607560" result="Passed" start-time="2017-02-18 17:09:07Z" end-time="2017-02-18 17:09:07Z" duration="0.000337" asserts="1" />
+          <test-case id="1003" name="TripleStepsWithOne" fullname="Recursion.TripleStepsTest.TripleStepsWithOne" methodname="TripleStepsWithOne" classname="Recursion.TripleStepsTest" runstate="Runnable" seed="445174624" result="Passed" start-time="2017-02-18 17:09:07Z" end-time="2017-02-18 17:09:07Z" duration="0.000349" asserts="1" />
+          <test-case id="1005" name="TripleStepsWithThree" fullname="Recursion.TripleStepsTest.TripleStepsWithThree" methodname="TripleStepsWithThree" classname="Recursion.TripleStepsTest" runstate="Runnable" seed="1939481287" result="Passed" start-time="2017-02-18 17:09:07Z" end-time="2017-02-18 17:09:07Z" duration="0.000330" asserts="1" />
+          <test-case id="1004" name="TripleStepsWithTwo" fullname="Recursion.TripleStepsTest.TripleStepsWithTwo" methodname="TripleStepsWithTwo" classname="Recursion.TripleStepsTest" runstate="Runnable" seed="2016127839" result="Passed" start-time="2017-02-18 17:09:07Z" end-time="2017-02-18 17:09:07Z" duration="0.000318" asserts="1" />
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-run>
+</test-run>
