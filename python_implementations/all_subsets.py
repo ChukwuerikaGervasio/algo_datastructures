@@ -7,4 +7,5 @@ def powerSet(aset):
     combo_subsets = [[first] + sub for sub in subsets_of_rest]
     return subsets_of_rest + combo_subsets
 
+
 print powerSet([1, 2, 3, 4])

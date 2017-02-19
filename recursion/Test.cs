@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using NUnit.Framework;
 
 namespace Recursion
@@ -85,5 +86,56 @@ namespace Recursion
             int result = Recursion.tripleStep(4);
             Assert.AreEqual(result, 8);
         }
+    }
+
+    [TestFixture]
+    public class PermsWithOutDupsTest
+    {
+        [Test]
+        public void PermsWithOutDupsSingleString()
+        {
+            var result = Recursion.permsWithOutDups("A");
+            var expected = new List<string>(new string[] {"A"});
+            Assert.AreEqual(result, expected);
+        }
+
+        [Test]
+        public void PermsWithOutDupsTwotrings()
+        {
+            var result = Recursion.permsWithOutDups("AB");
+            var expected = new List<string>(new string[] {"AB", "BA"});
+            Assert.AreEqual(result, expected);
+        }
+
+        [Test]
+        public void PermsWithOutDupsThreeStrings()
+        {
+            var result = Recursion.permsWithOutDups("ABC");
+            var expected = new List<string>(new string[] {"ABC", "BAC", "BCA", "ACB", "CAB", "CBA"});
+            Assert.AreEqual(result, expected);
+        }
+
+        // [Test]
+        // public void PermsWithOutDupsInt()
+        // {
+        //     var result = Recursion.permsWithOutDups(1);
+        //     var expected = new List<string>(new string[] {});
+        //     Assert.AreEqual(result, expected);
+        // }
+
+        // [Test]
+        // public void PermsWithOutDupsNull()
+        // {
+        //     var result = Recursion.permsWithOutDups(null);
+        //     var expected = new List<string>(new string[] {});
+        //     Assert.AreEqual(result, expected);
+        // }
+
+        // public void PermsWithOutDupsEmpty()
+        // {
+        //     var result = Recursion.permsWithOutDups("");
+        //     var expected = new List<string>(new string[] {});
+        //     Assert.AreEqual(result, expected);
+        // }
     }
 }

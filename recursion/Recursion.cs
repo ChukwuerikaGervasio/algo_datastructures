@@ -1,4 +1,4 @@
-using System;
+using System.Collections.Generic;
 
 namespace Recursion
 {
@@ -36,6 +36,38 @@ namespace Recursion
             int by2 = tripleStep(num - 2);
             int by3 = tripleStep(num - 3);
             return 1 + by1 + by2 + by3;
+        }
+
+        public static List<string> permsWithOutDups(string astr)
+        {
+            if (astr.Length < 1)
+            {
+                return new List<string>(new string[] {});
+            }
+            if (astr.Length == 1)
+            {
+                return new List<string>(new string[] {astr});
+            }
+            var first = astr[0];
+            var rest = astr.Substring(1, astr.Length - 1);
+            var permsOfrest = permsWithOutDups(rest);
+            var combPerms = new List<string>();
+            foreach (var perm in permsOfrest)
+            {
+                for (var i = 0; i < perm.Length + 1; i++)
+                {
+                    string endString;
+                    if (i == perm.Length) {
+                        endString = "";
+                    }
+                    else 
+                    {
+                        endString = perm.Substring(i, perm.Length);
+                    }
+                    combPerms.Add(perm.Substring(0, i) + first + endString);
+                }
+            }
+            return combPerms;
         }
     }
 }
