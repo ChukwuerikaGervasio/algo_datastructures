@@ -62,12 +62,44 @@ namespace Recursion
                     }
                     else 
                     {
-                        endString = perm.Substring(i, perm.Length);
+                        endString = perm.Substring(i, perm.Length - i);
                     }
                     combPerms.Add(perm.Substring(0, i) + first + endString);
                 }
             }
             return combPerms;
+        }
+
+        public static List<string> permsWithDups(string astr)
+        {
+            if (astr.Length < 1)
+            {
+                return new List<string>(new string[] {});
+            }
+            if (astr.Length == 1)
+            {
+                return new List<string>(new string[] {astr});
+            }
+            var first = astr[0];
+            var rest = astr.Substring(1, astr.Length - 1);
+            var permsOfrest = permsWithOutDups(rest);
+            var combPerms = new HashSet<string>();
+            foreach (var perm in permsOfrest)
+            {
+                for (var i = 0; i < perm.Length + 1; i++)
+                {
+                    string endString;
+                    if (i == perm.Length) {
+                        endString = "";
+                    }
+                    else 
+                    {
+                        endString = perm.Substring(i, perm.Length - i);
+                    }
+                    combPerms.Add(perm.Substring(0, i) + first + endString);
+                }
+            }
+            return new List<string>(combPerms);
         }
     }
 }
