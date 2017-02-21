@@ -42,11 +42,11 @@ namespace Recursion
         {
             if (astr.Length < 1)
             {
-                return new List<string>(new string[] {});
+                return new List<string>();
             }
             if (astr.Length == 1)
             {
-                return new List<string>(new string[] {astr});
+                return new List<string>{astr};
             }
             var first = astr[0];
             var rest = astr.Substring(1, astr.Length - 1);
@@ -74,11 +74,11 @@ namespace Recursion
         {
             if (astr.Length < 1)
             {
-                return new List<string>(new string[] {});
+                return new List<string>();
             }
             if (astr.Length == 1)
             {
-                return new List<string>(new string[] {astr});
+                return new List<string>{astr};
             }
             var first = astr[0];
             var rest = astr.Substring(1, astr.Length - 1);
