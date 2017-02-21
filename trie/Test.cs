@@ -11,10 +11,10 @@ namespace ConsoleApplication
         public void Init()
         {
             trie = new Trie();
-            trie.addPrefix("mr");
-            trie.addPrefix("mrs");
-            trie.addPrefix("miss");
-            trie.addPrefix("ms");
+            trie.addPrefixRecursively("mr");
+            trie.addPrefixRecursively("mrs");
+            trie.addPrefixRecursively("miss");
+            trie.addPrefixRecursively("ms");
         }
 
         [Test]
@@ -32,7 +32,7 @@ namespace ConsoleApplication
         [Test]
         public void TestSearchEmptyString()
         {
-            Assert.IsTrue(trie.containsPrefix(""));
+            Assert.IsFalse(trie.containsPrefix(""));
         }
 
         [Test]
