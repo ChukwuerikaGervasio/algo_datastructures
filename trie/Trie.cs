@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 
 namespace ConsoleApplication
@@ -59,16 +58,13 @@ namespace ConsoleApplication
             }
             
             var firstChar = prefix[0];
-            if (currentNode.children.ContainsKey(firstChar))
+            Node childNode = null;
+            if (!currentNode.children.TryGetValue(firstChar, out childNode))
             {
-                currentNode = currentNode.children[firstChar];
+                childNode = new Node(firstChar);
+                currentNode.children.Add(firstChar, childNode);
             }
-            else
-            {
-                var node = new Node(firstChar);
-                currentNode.children.Add(firstChar, node);
-                currentNode = node;
-            }
+            currentNode = childNode;
             var subString = prefix.Length == 1 ? "" : prefix.Substring(1, prefix.Length - 1);
             addPrefixRecursively(subString, currentNode);
         }
