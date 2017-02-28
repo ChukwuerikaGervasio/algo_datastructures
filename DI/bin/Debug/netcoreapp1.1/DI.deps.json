@@ -1,0 +1,60 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v1.1",
+    "signature": "ee39196485bb77fd60469d0a37e0f0f338fa32da"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v1.1": {
+      "DI/1.0.0": {
+        "dependencies": {
+          "Ninject": "4.0.0-beta-0134"
+        },
+        "runtime": {
+          "DI.dll": {}
+        }
+      },
+      "Ninject/4.0.0-beta-0134": {
+        "dependencies": {
+          "System.Data.Common": "4.1.0",
+          "System.Diagnostics.Contracts": "4.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.5/Ninject.dll": {}
+        }
+      },
+      "System.Data.Common/4.1.0": {
+        "runtime": {
+          "lib/netstandard1.2/System.Data.Common.dll": {}
+        }
+      },
+      "System.Diagnostics.Contracts/4.0.1": {
+        "runtime": {
+          "lib/netstandard1.0/System.Diagnostics.Contracts.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ninject/4.0.0-beta-0134": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ck28GaeVLepLigzWVq7rxS3NeXBXAGLeNnAGuuSH8fcsMBWOOHv1mKnpkySnSlA3w6SqF1nE4PCD5f83Lc9s2w=="
+    },
+    "System.Data.Common/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-epU8jeTe7aE7RqGHq9rZ8b0Q4Ah7DgubzHQblgZMSqgW1saW868WmooSyC5ywf8upLBkcVLDu93W9GPWUYsU2Q=="
+    },
+    "System.Diagnostics.Contracts/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HvQQjy712vnlpPxaloZYkuE78Gn353L0SJLJVeLcNASeg9c4qla2a1Xq8I7B3jZoDzKPtHTkyVO7AZ5tpeQGuA=="
+    }
+  }
+}
